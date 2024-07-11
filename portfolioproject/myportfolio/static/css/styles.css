@@ -1,0 +1,357 @@
+/*Importamos el archivo de las fuentes CSS para poder utilizarlas en nuestro proyecto solo con la propiedad font-family: ...*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.box1{ 
+background-image: url('../images/fondo.png');
+color: #000000;
+background-position: left;
+background-attachment: fixed;
+
+
+}
+
+#fotoperfil{
+    width: 200px;
+    border-radius: 30px;
+    border-color: #000000;
+    border-style: groove;
+    float: left;
+    
+}
+.titulo{
+text-align: center;
+}
+#titulonombre{
+    text-align: center;
+}
+#academica{ 
+    margin-top: 100px;
+    
+    text-align: justify;
+    align-self: center;
+}
+.containeraca{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+}
+#sobremi{
+    display: flexbox;
+    color:#000000;
+    padding-left: 5cm;
+    padding-right: 5cm;
+    
+}
+.caja1{
+    align-items: center;
+    align-self: center;
+}
+
+.title{
+    text-align: center;
+}
+#acercademiparrafo{
+    text-align: center;
+    color:#000000;
+    padding-top: 1cm;
+    margin-left: 1cm;
+    
+
+}
+#tituloSM{
+    color:#000000;
+    text-decoration:overline;
+}
+
+#logo{
+    width: 120px;
+}
+#inicio{
+    display: flex;
+    background-image: url('../images/inicio.jpg');
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgba(34, 82, 241, 0.822);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    text-shadow: 0px 4px 4px #282828;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+.title{
+    font-size:6ch;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#contenedorbarra{
+    display: flexbox;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 0 5%;
+    height: 100;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    z-index: 10000;
+}
+.nav-link.text{
+    color: antiquewhite;
+    
+}
+.nav-link.text:hover{
+    color: #909cdd;
+}
+.navbar-brand.text{
+
+    color:rgb(169, 82, 252);
+    font-weight: 600;
+}
+.nav-item{
+    margin-left: 1cm;
+}
+#carouselExampleCaptions{
+    margin-top: 1cm;
+    margin-right: 5cm;
+    margin-left: 5cm;
+    
+}
+.container-academica{
+    display: flex;  
+    align-items: center; 
+}
+/* seccion HABILIDADES */
+.habilidades{
+    color: #000000;
+    padding: 60px 0;
+    position: relative;
+    top: -100px;
+}
+.habilidades h2{
+    text-align: center;
+}
+.habilidades .contenedor-habi{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    padding: 10px;
+    margin: auto 0;
+}
+.score .box{
+    width: 100%;
+}
+.score .box h2{
+    display: block;
+    text-align: center;
+}
+.score .box .chart{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    line-height: 160px;
+    font-size: 40px;
+    text-align: center;
+}
+.box{
+    background-image: linear-gradient(180deg, #e6abe175 40%, #f0baf5ea 80%);
+}
+#proyectos{
+    color: #000000;
+}
+footer{
+    background-color: #263486;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#ig{
+    margin-right: 25px;
+}
+#lin{
+    margin-right: 25px;
+}
+
+
+
+
+
+@media (max-width:991px) {
+    
+    .box1{
+        padding: 0;
+        
+        width:fit-content;
+        
+    color: #000000;
+    background-position: left;
+    background-attachment: fixed;
+    }
+    #inicio{
+        width:fit-content;
+        background-image: url(../img/anders-jilden-uwbajDCODj4-unsplash.jpg);
+        
+    }
+    #contenedorbarra{
+    
+        background-image: linear-gradient(180deg, #28282800 40%, #28282800 80%);
+        z-index: 10000;
+    }
+    
+    #sobremi{
+        width:fit-content;
+        align-items: center;
+        align-content: center;
+
+    }
+    
+    #acercademi{
+        display: flex;
+        align-self: center;
+    }
+    #titulonombre{
+        display:flex ;
+        float: center;
+    }
+    #fotoperfil{
+        
+        width: 300px;
+        border-radius: 30px;
+        border-color: #000000;
+        border-style: groove;
+        float: initial;
+        align-self: center;
+        margin-left: 20px;
+    }
+    .nav-link.text{
+        color:#131f64;
+        
+    }
+    #acercademiparrafo{
+        text-align: justify;
+        font-size: 30px;
+        
+    }
+    #academica{
+        text-align: justify;
+        font-size: 30px;
+
+    }
+    #ig{
+        width: 50px;
+    }
+    #tuiter{
+        width: 50px;
+    }
+    #lin{
+        width: 50px;
+    }
+}
+/* Contact Section */
+button {
+    margin-top: 30px; 
+    padding: 17px 40px;
+    border-radius: 50px;
+    box-shadow: #0000000d 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    z-index: 1;
+    position: relative; 
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: var(--color4);
+    text-decoration: underline;
+    text-decoration-color: var(--color8); 
+    text-decoration-style: wavy;
+}
+
+/* Estilo para el botón "Enviar" en la sección de contacto */
+#contacto .btn-primary {
+    background-color: rgb(241, 250, 112); 
+    border-color: #fcff3f; 
+    color: #000000; 
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; 
+}
+
+#contacto .btn-primary:hover {
+    background-color: var(--color8); 
+    border-color: #e4e004; 
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+#contacto .btn-primary:active,
+#contacto .btn-primary:focus {
+    background-color: #fcff3f; 
+    border-color: var(--color8); 
+    color: #000000; 
+    outline: none; 
+}
+
+.contacto {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+
+/* Estilos para el contenedor de contacto */
+.contacto .container {
+    max-width: 100%;
+}
+
+/* Estilos para el formulario de contacto */
+#contact {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la imagen del mapa */
+.contacto img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la lista de información de contacto */
+.contacto .info {
+    margin-top: 20px;
+}
+
+.contacto .info ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.contacto .info li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.contacto .info i {
+    margin-right: 10px;
+}
+
+

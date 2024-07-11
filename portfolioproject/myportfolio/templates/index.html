@@ -1,0 +1,262 @@
+{% load static %}
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="./assets/vendor/font-awesome/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/vendor/font-awesome/brands.css" rel="stylesheet" />
+    <link href="./assets/vendor/font-awesome/solid.css" rel="stylesheet" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./assets/vendor/normalize/normalize.css">
+    <!-- bootstrap 5.3 -->
+    {% bootstrap_css %}
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Portafolio Raquel Rehbein</title>
+</head>
+<body>
+<div class="box1">
+
+
+
+    <nav id="barra" class="navbar navbar-expand-lg  bg-transparent">
+        
+        <div id="contenedorbarra" class="container-fluid">
+            <img class="img-fluid" id="logo" src="{% static 'images/cocadas logo.png' %}" alt="" srcset="">
+        <a class="navbar-brand text" href="#">Raquel Rehbein Brange</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link text" aria-current="page" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text" aria-current="page" href="#sobreMisection">Sobre mí</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text" aria-current="page" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text" href="#contact">Contacto</a>
+                </li>
+            </ul>
+            
+        </div>
+        </div>
+    </nav>
+<section id="inicio">
+<div  class="container p-5">
+    <h1 class="title">Bienvenid@ a mi página <3</h1>
+</div>
+</section>
+<section id="sobreMisection">
+    <h1 id="tituloSM" class="text text-center p-5">Sobre mí</h1>
+
+<div id="sobremi" class="container-fluid">
+    
+    
+    <img id="fotoperfil" src="{% static 'images/yo.jpeg' %}" alt="">
+    
+    <h1 id="titulonombre" class="text">Raquel Rehbein Brange</h1>
+    <div class="caja1">
+    <h4 class="text text-center">Estudiante de Ingeniería Informática</h4>
+    <h5 class="text text-center">Duoc Uc</h5>
+    
+    <p id="acercademiparrafo" class="text">Actualmente soy estudiante de segundo año de Ingeniería Informática. Me considero una persona amable, atenta y paciente. Me
+        destaco por aprender rápidamente y colaborar en el trabajo en equipo. Siento que tengo habilidades de liderazgo
+        y las voy fortaleciendo gracias a mi paso por instituciones educativas y a mi experiencia laboral. También me
+        apasiona la Astronomía y todo lo relacionado con ella, de hecho es un área en el que me gustaría poder trabajar
+        en el futuro.
+        Mis pasatiempos son los videojuegos y juegos de mesa, también me gusta tocar la guitarra y el ukelele.</p>
+    
+    </div>
+
+
+<div id="academica" class="container p-5">
+    <h2>Información Académica</h2>
+    <div class="containeraca">
+        <p>Centro de estudios La Araucana, Puerto Montt <br>
+            2016 Licencia de Enseñanza Media</p>
+    </div>
+    <div class="containeraca">
+        <p>Universidad de Concepción <br>2017-2019 Estudiante de Astronomía</p>
+    </div>
+    <div class="containeraca">
+        <p>Duoc UC sede Puerto Montt <br>2023-2026 Ingeniería Informática</p>
+    </div>
+
+
+</div>
+</section>
+
+    <section class="habilidades" id="habilidades">
+        <div class="contenedor-habi">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="95">
+                                <img src="{% static 'images/htmlcss.png'%}" alt="" width="170">
+                            </div>
+                            <h2>HTML & CSS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                <img src="{% static 'images/bootstrap.png'%}" alt="" width="150">
+                            </div>
+                            <h2>BOOSTRAP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="85">
+                                <img src="{% static 'images/pngwing.com.png'%}" alt="" width="150">
+                            </div>
+                            <h2>JAVASCRIPT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="70">
+                                <img src="{% static 'images/sql.png'%}" alt="" width="190">
+                            </div>
+                            <h2>SQL</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                <img src="{% static 'images/python.png' %}" alt="" width="150">
+                            </div>
+                            <h2>PYTHON</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                <img src="{% static 'images/java.png'%}" alt="" width="190">
+                            </div>
+                            <h2>JAVA</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+
+<section id="projects" class="py-5">
+
+    <div class="container">
+
+      <h2 class="text-center">Mis proyectos</h2>
+
+      <div class="row">
+
+        {% for proyecto in proyectos %}
+
+        <div class="col-md-4">
+
+          <div class="card mb-4">
+
+            <img src="{{ proyecto.imagen.url }}" class="card-img-top" alt="{{ proyecto.titulo }}">
+
+            <div class="card-body">
+
+              <h5 class="card-title">{{ proyecto.titulo }}</h5>
+
+              <p class="card-text">{{ proyecto.descripcion }}</p>
+
+              <a href="{{ proyecto.link_sitio }}" class="btn btn-primary" target="_blank">Web</a>
+
+              <a href="{{ proyecto.link_repositorio }}" class="btn btn-secondary" target="_blank">Repositorio</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </section>
+<!--Contact Section-->
+<section id="contacto" class="contacto py-5">
+    <div id="containercontacto" class="container">
+        <div class="row">
+            <!-- Columna del Formulario de Contacto -->
+            <div class="col-md-6">
+                <section id="contact" class="bg-light p-4">
+                    <h2 class="text-center">Contáctame</h2>
+                    <form method="POST" action="{% url 'contacto_nuevo' %}" class="needs-validation" novalidate>
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="id_nombre" class="form_label">Nombre</label>
+                            <input type="text" class="form-control" id="id_nombre" name="nombre" required>
+                            <div class="invalid-feedback">Por favor ingresa un nombre</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="id_email" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="id_email" name="email" required>
+                            <div class="invalid-feedback">Por favor ingresa un correo</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="id_mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" name="mensaje" id="id_mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </section>
+            </div>
+
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <img src="{% static 'images/puerto-montt_prin-min.jpg' %}" alt="Mapa" class="img-fluid mb-3" style="max-width: 100%;">
+                
+            </div>
+        </div>
+
+<footer>
+    <a href="https://www.instagram.com/"><img id="ig" src="{% static 'images/Instagram_logo_2022.svg.webp' %}" alt="" width="25px" ></a>
+    <a href="https://www.linkedin.com/"><img id="lin" src="{% static 'images/LinkedIn_icon.svg.webp' %}" width="25px" alt=""></a>
+    <a href="https://www.x.com/"><img id="tuiter" src="{% static 'images/tuiter.png'%}" width="25px" alt=""></a>
+</footer>
+
+<!-- final -->
+</div>
+    <!-- Bootstrap JS -->
+    {% bootstrap_javascript %}
+    <!-- JQuery -->
+    <script src="./assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Scripts personalizados -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
